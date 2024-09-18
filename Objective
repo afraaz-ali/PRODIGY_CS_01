@@ -1,0 +1,48 @@
+This project involves developing a Python program that allows users to encrypt or decrypt a password using the Caesar cipher algorithm. 
+
+The Caesar cipher is a simple and classic encryption technique where each letter in the plaintext is shifted a specified number of places 
+up or down the alphabet. Users can input their password and a shift value, which determines how the characters will be altered during the encryption or decryption process.
+The program provides an easy way for users to securely encode their passwords or reveal previously encoded passwords. 
+Non-alphabetic characters in the password, such as numbers and special symbols, remain unchanged during the process.
+
+This project was developed and tested using PyCharm Community Edition 2023, ensuring compatibility and ease of execution in that development environment. 
+It serves as an educational exercise in cryptography and demonstrates how basic encryption can be implemented in Python.
+
+
+Understanding the Process:
+
+Encryption Process:
+
+For each letter in the plaintext:
+Find its position in the alphabet (e.g., A = 0, B = 1, ..., Z = 25).
+Shift this position by the key value. If the end of the alphabet is reached, wrap around to the beginning (circular shift).
+Replace the original letter with the letter at the new position.
+Non-alphabetic characters (e.g., spaces, punctuation) are usually not
+
+Shift Value (Key): Choose a fixed number, 
+called the "shift" or "key." This number determines how many positions each letter 
+in the plaintext will be shifted. For example, if the shift is 3, then each letter 
+in the message will be shifted three places forward in the alphabet.
+
+Example:
+
+Plaintext: "HELLO"
+Shift: 3
+Ciphertext: "KHOOR"
+
+Here's how each letter is shifted:
+H (7) → K (10)
+E (4) → H (7)
+L (11) → O (14)
+L (11) → O (14)
+O (14) → R (17)
+
+Decryption Process:
+
+To decrypt the message, shift the letters in the opposite direction by the same key value.
+Using the previous example, "KHOOR" shifted backward by 3 positions results in "HELLO."
+
+Limitations :
+The Caesar cipher is extremely simple and can be easily broken, 
+especially with modern computers. It's primarily useful for educational 
+purposes and understanding the basics of cryptography.
